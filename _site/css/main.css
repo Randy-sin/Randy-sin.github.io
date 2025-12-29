@@ -1,33 +1,87 @@
-*, *::before, *::after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* Tianxing CHEN Style - Academic Classic */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+body { font-family: 'Georgia', 'Times New Roman', serif; color: #333; line-height: 1.6; max-width: 1280px; /* Widen to support horizontal desktop layout */ margin: 0 auto; padding: 40px 40px; /* Increase side padding */ background-color: #fff; font-size: 16px; }
 
-body { margin: 0; color: #262626; font-family: "Open Sans", sans-serif; font-size: 1.1em; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: #0066cc; text-decoration: none; }
 
-h1, h2, h3 { font-weight: 600; color: #425469; font-family: "Muli", sans-serif; line-height: 1.5; }
+a:hover { text-decoration: underline; }
 
-h1 { color: #19ccaa; font-size: 2.5em; }
-h1 a, h1 a:visited { text-decoration: none; color: #19ccaa; }
+/* Typography Utility */
+.highlight-red { color: #cc0000; font-weight: bold; }
 
-h2 { font-size: 2em; }
+.highlight-bold { font-weight: bold; color: #000; }
 
-a, a:visited { color: #425469; text-decoration: underline; font-weight: bold; }
+/* Header Section */
+.header-container { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; /* More breathing room */ gap: 50px; padding-bottom: 40px; border-bottom: 1px solid #eee; /* Subtle separation */ }
 
-a:hover { color: #19ccaa; text-decoration: underline; }
+.header-info { flex: 1; padding-top: 10px; }
 
-header { background: #1d1425; padding: 0px 15px; text-align: center; margin: 50px 0 0; height: 50vh; display: flex; justify-content: center; align-items: center; }
+.name { font-family: 'Georgia', serif; font-weight: 700; font-size: 38px; /* Larger name */ color: #003366; margin-bottom: 20px; letter-spacing: -0.5px; }
 
-main { padding: 0 15px; max-width: 800px; margin: 0 auto; }
+.roles { list-style: none; padding: 0; margin: 0 0 25px 0; }
 
-time { color: #898989; }
+.roles li { font-family: 'Arial', sans-serif; font-size: 16px; color: #444; margin-bottom: 10px; font-weight: 500; display: flex; align-items: center; gap: 12px; }
 
-.container { max-width: 800px; margin: 0 auto; }
+.roles i { color: #0066cc; width: 20px; text-align: center; }
 
-/* Aside */
-aside { position: fixed; top: 0; left: 0; background: #fff; width: 100%; z-index: 2; border-bottom: 1px solid white; box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1); }
-aside nav { float: left; max-width: 800px; margin: 0 auto; }
-aside nav ul { margin: 0; padding: 0; list-style: none; }
-aside nav ul li { float: left; position: relative; }
-aside nav ul li a { text-decoration: none; display: block; padding: 15px; font-family: 'Muli', sans-serif; line-height: 20px; margin-bottom: -1px; box-shadow: 0; }
-aside nav ul li a:hover, aside nav ul li a:active { background: #1d1425; text-decoration: none; color: #19ccaa; }
-aside nav:after { content: ''; display: table; clear: both; }
+.social-icons { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
 
-footer { text-align: center; padding: 40px; }
+.social-icons a { display: inline-flex; justify-content: center; align-items: center; width: 42px; /* Larger icons */ height: 42px; background-color: #f5f5f5; border-radius: 6px; color: #555; font-size: 20px; transition: all 0.2s ease; text-decoration: none; border: 1px solid #eee; }
+
+.social-icons a:hover { background-color: #0066cc; color: #fff; transform: translateY(-2px); border-color: #0066cc; }
+
+.header-photo { flex-shrink: 0; width: 280px; /* Wider photo */ height: 350px; background-color: #f0f0f0; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Better shadow */ }
+
+/* Section Headings */
+h2 { font-family: 'Arial', sans-serif; /* Switch to Sans for modern academic look */ font-size: 24px; font-weight: 700; color: #003366; margin-top: 60px; margin-bottom: 25px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Biography */
+.bio-text { font-size: 17px; /* Slightly larger reading text */ text-align: justify; margin-bottom: 15px; color: #444; }
+
+/* News List */
+.news-list { list-style: none; padding: 0; }
+
+.news-list li { margin-bottom: 12px; font-size: 16px; font-family: 'Arial', sans-serif; color: #444; }
+
+.news-date { font-family: 'Courier New', monospace; font-weight: 700; color: #003366; margin-right: 12px; background: #f5f9ff; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+
+/* Layout for "Image + Text" Sections */
+.item-container { display: flex; gap: 35px; margin-bottom: 40px; align-items: flex-start; }
+
+.item-logo { flex-shrink: 0; width: 240px; text-align: center; }
+
+.item-logo img { width: 100%; max-height: 160px; object-fit: contain; border: 1px solid #eaeaea; padding: 8px; background: #fff; border-radius: 6px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); }
+
+.item-details { flex: 1; }
+
+.item-title { font-size: 20px; font-weight: 700; color: #003366; margin-bottom: 6px; }
+
+.item-subtitle { font-size: 15px; color: #666; margin-bottom: 8px; font-style: italic; }
+
+.item-desc { font-size: 15px; color: #444; font-family: 'Arial', sans-serif; line-height: 1.6; }
+
+/* Awards Grid */
+.awards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+
+.award-item { text-align: center; border: 1px solid #eaeaea; padding: 15px; transition: all 0.2s; background: #fff; border-radius: 8px; }
+
+.award-item:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06); border-color: #ccc; }
+
+.award-img { width: 100%; height: 160px; background-color: #f9f9f9; object-fit: cover; margin-bottom: 12px; border-radius: 4px; }
+
+.award-caption { font-size: 13px; font-family: 'Arial', sans-serif; color: #444; line-height: 1.4; }
+
+/* Footer */
+footer { margin-top: 100px; padding-top: 30px; border-top: 1px solid #eee; text-align: center; font-size: 14px; color: #999; }
+
+/* Responsive */
+@media (max-width: 900px) { body { max-width: 100%; padding: 20px; }
+  .header-container { flex-direction: column-reverse; align-items: center; text-align: center; }
+  .header-info { text-align: center; }
+  .roles li { justify-content: center; }
+  .social-icons { justify-content: center; }
+  .header-photo { width: 200px; height: 250px; margin-bottom: 20px; }
+  .item-container { flex-direction: column; }
+  .item-logo { width: 100%; text-align: left; }
+  .item-logo img { max-width: 100%; height: auto; }
+  .awards-grid { grid-template-columns: repeat(2, 1fr); } }

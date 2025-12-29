@@ -7,30 +7,19 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <!-- Optional: Add Google Fonts here if needed -->
+    <!-- Favicon if needed -->
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1><a href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-                    <!-- <li><a href="{{ "/blog/" | prepend: site.baseurl }}">Blog</a></li> -->
-                    <!-- Add more links as needed, e.g., CV, Projects -->
-                </ul>
-            </nav>
-        </header>
+    <!-- Removed default header and container wrapper to allow full control by page content -->
+    
+    <main>
+        {{ content }}
+    </main>
 
-        <main>
-            {{ content }}
-        </main>
-
-        <footer>
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by Jekyll.</p>
-        </footer>
-    </div>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by Jekyll.</p>
+    </footer>
 
 </body>
 </html>
