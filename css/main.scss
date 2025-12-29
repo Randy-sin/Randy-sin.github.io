@@ -1,111 +1,128 @@
-/* Refined Academic/Portfolio Style */
+/* Academic Minimalist Style */
 body {
-  margin: 0;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  background-color: #fff;
+    font-family: 'Georgia', 'Times New Roman', serif; /* Serif for academic feel */
+    color: #222;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
 }
 
-.container {
-  max-width: 860px; /* Standard academic width */
-  margin: 0 auto;
-  padding: 40px 20px;
+a {
+    color: #0066cc; /* Classic academic blue link */
+    text-decoration: none;
 }
 
-/* Header & Nav */
-header {
-  margin-bottom: 60px;
-  text-align: center;
+a:hover {
+    text-decoration: underline;
 }
 
-header h1 a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
+/* Header */
+.profile-header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
 }
 
-nav ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  margin-top: 20px;
+.name {
+    font-family: 'Arial', sans-serif; /* Sans-serif for Name */
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #111;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+.title {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 5px 0;
 }
 
-nav a {
-  color: #666;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
+.affiliation {
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    margin: 0 0 10px 0;
 }
 
-nav a:hover {
-  color: #000;
-  border-bottom: 2px solid #000;
+.contact-info {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #444;
 }
 
-/* Main Content Typography */
-h1 { font-size: 2.5em; margin-bottom: 0.5em; line-height: 1.2; }
-h2 { font-size: 1.8em; margin-top: 1.5em; margin-bottom: 0.8em; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-h3 { font-size: 1.4em; margin-top: 1.2em; margin-bottom: 0.5em; color: #222; }
-
-a { color: #0066cc; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* Profile Section */
-.profile-section {
-  text-align: left;
-  margin-bottom: 40px;
+/* Headings */
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    padding-bottom: 5px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.tagline {
-  font-size: 1.2em;
-  color: #555;
-  font-style: italic;
-  margin-bottom: 20px;
+/* Sections */
+.section {
+    margin-bottom: 30px;
 }
 
-.bio {
-  font-size: 1.1em;
-  color: #444;
+/* News Table */
+.news-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.social-links {
-  margin-top: 20px;
-  font-size: 1em;
+.news-table td {
+    padding: 4px 0;
+    vertical-align: top;
 }
 
-/* News Section */
-.news-section ul {
-  padding-left: 20px;
-  list-style-type: none; /* Cleaner look */
+.news-table .date {
+    width: 100px;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
-.news-section li {
-  margin-bottom: 12px;
+/* Projects */
+.project-entry {
+    margin-bottom: 20px;
 }
 
-/* Projects Section */
-.project-item {
-  margin-bottom: 30px;
+.project-title {
+    font-size: 16px;
+    margin-bottom: 4px;
 }
 
-.project-item p {
-  margin: 5px 0;
+.project-desc {
+    font-size: 15px;
+    color: #444;
 }
 
+/* Honors List */
+.honors ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.honors li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
 footer {
-  margin-top: 80px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
-  text-align: center;
-  color: #888;
-  font-size: 0.9em;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    font-family: 'Arial', sans-serif;
 }
