@@ -1,0 +1,10 @@
+title: Xian Xinglang
+email: your-email@domain.com
+description: Academic and personal website.
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+include: ['_pages']
