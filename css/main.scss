@@ -1,74 +1,152 @@
-/* Academic Minimalist Style */
+/* Academic Minimalist Style - Enhanced */
 body {
-    font-family: 'Georgia', 'Times New Roman', serif; /* Serif for academic feel */
+    font-family: 'Georgia', 'Times New Roman', serif;
     color: #222;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 50px 24px;
     background-color: #fff;
 }
 
 a {
-    color: #0066cc; /* Classic academic blue link */
+    color: #0066cc;
     text-decoration: none;
+    border-bottom: 1px dotted #0066cc;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid #0066cc;
 }
 
 /* Header */
 .profile-header {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
 }
 
 .name {
-    font-family: 'Arial', sans-serif; /* Sans-serif for Name */
+    font-family: 'Arial', 'Helvetica', sans-serif;
     font-weight: 700;
-    font-size: 32px;
-    margin-bottom: 5px;
+    font-size: 36px;
+    margin-bottom: 8px;
     color: #111;
+    letter-spacing: -0.5px;
 }
 
 .title {
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
-    color: #555;
-    margin: 0 0 5px 0;
+    color: #444;
+    margin: 0;
 }
 
 .affiliation {
-    font-size: 16px;
+    font-family: 'Georgia', serif;
+    font-size: 17px;
     font-style: italic;
     color: #666;
-    margin: 0 0 10px 0;
+    margin: 4px 0 12px 0;
 }
 
 .contact-info {
     font-family: 'Arial', sans-serif;
     font-size: 14px;
-    color: #444;
+    color: #555;
 }
 
 /* Headings */
 h2 {
     font-family: 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #eee; /* Subtle separator */
-    padding-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    display: inline-block;
+    padding-right: 20px;
 }
 
-/* Sections */
-.section {
-    margin-bottom: 30px;
+/* Experience Section */
+.experience-entry {
+    margin-bottom: 25px;
+}
+
+.exp-header {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+.exp-date {
+    float: right;
+    color: #777;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+
+.exp-role {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.exp-desc {
+    font-size: 15px;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* Awards List */
+.awards ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.awards li {
+    margin-bottom: 15px;
+}
+
+.awards strong {
+    color: #222;
+}
+
+.detail {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* Projects */
+.project-entry {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid #f0f0f0;
+}
+
+.project-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.tech-stack {
+    font-size: 13px;
+    color: #888;
+    font-weight: normal;
+    margin-left: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.project-desc {
+    font-size: 15px;
+    color: #444;
 }
 
 /* News Table */
@@ -78,51 +156,14 @@ h2 {
 }
 
 .news-table td {
-    padding: 4px 0;
+    padding: 6px 0;
     vertical-align: top;
+    font-size: 15px;
 }
 
 .news-table .date {
-    width: 100px;
-    color: #666;
+    width: 120px;
+    color: #777;
     font-family: 'Arial', sans-serif;
     font-size: 14px;
-    white-space: nowrap;
-}
-
-/* Projects */
-.project-entry {
-    margin-bottom: 20px;
-}
-
-.project-title {
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.project-desc {
-    font-size: 15px;
-    color: #444;
-}
-
-/* Honors List */
-.honors ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.honors li {
-    margin-bottom: 5px;
-}
-
-/* Footer */
-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    text-align: center;
-    font-size: 12px;
-    color: #999;
-    font-family: 'Arial', sans-serif;
 }
