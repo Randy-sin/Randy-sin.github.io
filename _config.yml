@@ -1,8 +1,8 @@
 title: Xian Xinglang
 email: your-email@domain.com
 description: Academic and personal website.
-baseurl: ""
-url: ""
+baseurl: "/xianxinglang.github.io"
+url: "https://Randy-sin.github.io"
 
 # Build settings
 markdown: kramdown
